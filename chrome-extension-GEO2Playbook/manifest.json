@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "GEO2Playbook",
+  "version": "1.0",
+  "description": "Adds a GEO study in the Playbook",
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.ncbi.nlm.nih.gov/gds/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": ["icon.png"]
+}
